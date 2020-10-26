@@ -1,34 +1,29 @@
-const mongoose = require('mongoose'); // Erase if already required
+const mongoose = require('mongoose')
 
-// Declare the Schema of the Mongo model
-var iquirySchema = new mongoose.Schema({
-    name:{
-        type:String,
-        required:true,
-        unique:true,
-        index:true,
+const inquirySchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+        index: true,
     },
-    email:{
-        type:String,
-        required:true,
-        unique:true,
+    email: {
+        type: String,
+        required: true,
+        unique: true,
     },
-    phoneNumber:{
-        type:Number,
-        required:true,
-        unique:true,
+    phoneNumber: {
+        type: Number,
+        required: true,
     },
-    kitSize:{
-        type:Number,
-        required:true,
-        unique:true,
+    kitSize: {
+        type: Number,
+        required: true,
+        unique: true,
     },
-    package:{
-        type:Number,
-        required:true,
-        unique:true,
+    package: {
+        type: String,
+        required: true,
     },
-});
+})
 
-//Export the model
-module.exports = mongoose.model('Inquiry', inquirySchema);
+module.exports = mongoose.model('Inquiry', inquirySchema)
