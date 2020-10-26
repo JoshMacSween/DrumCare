@@ -6,34 +6,43 @@ const Packages = () => {
     <Container>
       <Row>
         <Col>
-          <Card>
+          <Card className="rounded">
             <Card.Body>
               <Card.Title className="text-center">Bronze</Card.Title>
               <Card.Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat.
+                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Accusantium minus
+                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
+                illo rem ea cum, sint omnis ipsum!
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card className="rounded">
             <Card.Body>
               <Card.Title className="text-center">Silver</Card.Title>
               <Card.Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat.
+                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Accusantium minus
+                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
+                illo rem ea cum, sint omnis ipsum!
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card className="rounded">
             <Card.Body>
               <Card.Title className="text-center">Platinum</Card.Title>
               <Card.Text>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat.
+                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Accusantium minus
+                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
+                illo rem ea cum, sint omnis ipsum!
               </Card.Text>
             </Card.Body>
           </Card>

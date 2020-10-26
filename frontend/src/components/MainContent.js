@@ -1,6 +1,6 @@
 import React from 'react'
 import Packages from './Packages'
-import { Container, Row, Col } from 'react-bootstrap'
+import { Container, Row, Col, Button } from 'react-bootstrap'
 
 const MainContent = () => {
   return (
@@ -16,6 +16,9 @@ const MainContent = () => {
         </blockquote>
 
         <Packages />
+        <div className="text-center py-3">
+          <Button href="/form">Book Now</Button>
+        </div>
       </Container>
     </>
   )
