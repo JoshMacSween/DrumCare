@@ -4,7 +4,6 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const connectDB = require('./config/db')
 const bodyParser = require('body-parser')
-const { mailer } = require('./mailers/mailer')
 const nodemailer = require('nodemailer')
 
 const app = express()
@@ -30,7 +29,7 @@ app.get('/inquiry/:id', (req, res) => {
 
 app.post('/form', (req, res) => {
   const output = `
-    <p>Testing out the mailer</p>
+    <p>Customer Inquiry</p>
     <h3>Contact details</h3>
     <ul>
       <li>Name: ${req.body.name}</li>
@@ -45,7 +44,7 @@ app.post('/form', (req, res) => {
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
     port: 587,
-    secure: false, // true for 465, false for other ports
+    secure: false,
     auth: {
       user: 'drumcareyeg@gmail.com',
       pass: process.env.GMAIL_PASS,
@@ -55,7 +54,6 @@ app.post('/form', (req, res) => {
     // },
   })
 
-  // send mail with defined transport object
   let info = transporter.sendMail({
     from: '"Drum Care" <drumcareyeg@gmail.com>',
     to: 'drumcareyeg@gmail.com',
@@ -64,9 +62,6 @@ app.post('/form', (req, res) => {
     html: output,
   })
 
-  // console.log('Message sent: %s', info.messageId)
-
-  // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info))
 })
 
 const PORT = process.env.PORT || 5000
