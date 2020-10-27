@@ -4,8 +4,8 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const connectDB = require('./config/db')
 const bodyParser = require('body-parser')
-const {mailer} = require('./mailers/mailer')
-const exphbs = require('express-handlebars')
+const { mailer } = require('./mailers/mailer')
+const nodemailer = require('nodemailer')
 
 const app = express()
 
@@ -13,7 +13,6 @@ dotenv.config()
 connectDB()
 
 app.use(bodyParser.json())
-app.engine('handlebars', exphbs())
 app.use(cors())
 
 app.get('/', (req, res) => {
@@ -30,14 +29,46 @@ app.get('/inquiry/:id', (req, res) => {
 })
 
 app.post('/form', (req, res) => {
-  res.send('Inquiry Posted!')
-  mailer(req.body)
-  console.log("Posted!");
+  const output = `
+    <p>Testing out the mailer</p>
+    <h3>Contact details</h3>
+    <ul>
+      <li>Name: ${req.body.name}</li>
+      <li>Email: ${req.body.email}</li>
+      <li>Number: ${req.body.phoneNumber}</li>
+      <li>Preffered Date of Service: ${req.body.date}</li>
+      <li>Kit Size: ${req.body.kitSize}</li>
+      <li>Package: ${req.body.package}</li>
+    </ul>
+  `
+
+  let transporter = nodemailer.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false, // true for 465, false for other ports
+    auth: {
+      user: 'drumcareyeg@gmail.com',
+      pass: process.env.GMAIL_PASS,
+    },
+    // tls: {
+    //   rejectUnauthorized: false,
+    // },
+  })
+
+  // send mail with defined transport object
+  let info = transporter.sendMail({
+    from: '"Drum Care" <drumcareyeg@gmail.com>',
+    to: 'drumcareyeg@gmail.com',
+    subject: 'Inquiry',
+    text: 'Hello world?',
+    html: output,
+  })
+
+  // console.log('Message sent: %s', info.messageId)
+
+  // console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info))
 })
-
-
-
 
 const PORT = process.env.PORT || 5000
 
-app.listen(PORT, console.log(`Server is listening on port 5000`))
+app.listen(PORT, console.log(`Server is listening on port ${PORT}`))

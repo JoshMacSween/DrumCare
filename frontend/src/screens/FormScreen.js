@@ -7,6 +7,7 @@ const ContactScreen = () => {
     name: '',
     email: '',
     phoneNumber: '',
+    date: '',
     kitSize: '',
     package: 'Bronze',
     message: '',
@@ -49,6 +50,10 @@ const ContactScreen = () => {
     const currentData = event.target.value
     setInquiry({ ...inquiry, phoneNumber: currentData })
   }
+  const handleChangeDate = (event) => {
+    const currentData = event.target.value
+    setInquiry({ ...inquiry, date: currentData })
+  }
   const handleChangeKit = (event) => {
     const currentData = event.target.value
     setInquiry({ ...inquiry, kitSize: currentData })
@@ -88,6 +93,15 @@ const ContactScreen = () => {
             type="number"
             value={inquiry.phoneNumber}
             onChange={handleChangeNumber}
+          />
+        </Form.Group>
+        <Form.Group>
+          <Form.Label>Preffered Date of Service</Form.Label>
+          <Form.Control
+            required
+            type="date"
+            value={inquiry.date}
+            onChange={handleChangeDate}
           />
         </Form.Group>
         <Form.Group controlId="kitsize">
