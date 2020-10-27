@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import axios from 'axios'
 
 const ContactScreen = () => {
   const [inquiry, setInquiry] = useState({
@@ -7,12 +8,33 @@ const ContactScreen = () => {
     email: '',
     phoneNumber: '',
     kitSize: '',
-    package: '',
-    inquiryText: '',
+    package: 'Bronze',
+    message: '',
   })
 
+  const [result, setResult] = useState(null)
+
   const handleSubmit = (event) => {
-    console.log(event);
+    event.preventDefault()
+    axios
+      .post('http://localhost:5000/form', { ...inquiry })
+      .then((response) => {
+        setResult(response.data)
+        setInquiry({
+          name: '',
+          email: '',
+          phoneNumber: '',
+          kitSize: '',
+          package: '',
+          message: '',
+        })
+      })
+      .catch(() => {
+        setResult({
+          success: false,
+          message: 'Message send failure',
+        })
+      })
   }
 
   const handleChangeName = (event) => {
@@ -35,10 +57,10 @@ const ContactScreen = () => {
     const currentData = event.target.value
     setInquiry({ ...inquiry, package: currentData })
   }
-  const handleChangeInquiryText = (event) => {
-    const currentData = event.target.value
-    setInquiry({ ...inquiry, inquiryText: currentData })
-  }
+  // const handleChangeInquiryText = (event) => {
+  //   const currentData = event.target.value
+  //   setInquiry({ ...inquiry, inquiryText: currentData })
+  // }
 
   return (
     <>
@@ -53,14 +75,16 @@ const ContactScreen = () => {
           />
           <br />
           <Form.Label>Email address</Form.Label>
-          <Form.Control required
+          <Form.Control
+            required
             type="email"
             value={inquiry.email}
             onChange={handleChangeEmail}
           />
           <br />
           <Form.Label>Telephone Number</Form.Label>
-          <Form.Control required
+          <Form.Control
+            required
             type="number"
             value={inquiry.phoneNumber}
             onChange={handleChangeNumber}
@@ -68,7 +92,8 @@ const ContactScreen = () => {
         </Form.Group>
         <Form.Group controlId="kitsize">
           <Form.Label>How many pieces is your kit?</Form.Label>
-          <Form.Control required
+          <Form.Control
+            required
             type="number"
             value={inquiry.kitSize}
             onChange={handleChangeKit}
@@ -76,14 +101,14 @@ const ContactScreen = () => {
         </Form.Group>
         <Form.Group controlId="package">
           <Form.Label>What Package Would You Like</Form.Label>
-          <Form.Control required as="select" onChange={handleChangePackage}>
+          <Form.Control defaultValue={inquiry.package} required as="select" onChange={handleChangePackage}>
             <option>Bronze</option>
             <option>Silver</option>
             <option>Gold</option>
           </Form.Control>
         </Form.Group>
 
-        <Form.Group controlId="inquiryText">
+        {/* <Form.Group controlId="inquiryText">
           <Form.Label>Anything else you'd like us to know?</Form.Label>
           <Form.Control
             as="textarea"
@@ -91,10 +116,12 @@ const ContactScreen = () => {
             name="inquiryText"
             value={inquiry.inquiryText}
             onChange={handleChangeInquiryText}
-          />
-        </Form.Group>
+          /> */}
+        {/* </Form.Group> */}
         <div className="text-center">
-          <Button variant="primary" type="submit">Submit</Button>
+          <Button variant="primary" type="submit">
+            Submit
+          </Button>
         </div>
       </Form>
     </>
