@@ -10,11 +10,12 @@ const Packages = () => {
             <Card.Body>
               <Card.Title className="text-center">Bronze</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Accusantium minus
-                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
-                illo rem ea cum, sint omnis ipsum!
+                Our bronze package consists of:
+                <ul>
+                  <li>Full kit tuning</li>
+                  <li>$100 for a 4 piece kit</li>
+                  <li>$20 for each additional drum</li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -24,11 +25,11 @@ const Packages = () => {
             <Card.Body>
               <Card.Title className="text-center">Silver</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Accusantium minus
-                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
-                illo rem ea cum, sint omnis ipsum!
+                Everything from the Bronze Package, plus:
+                <ul>
+                  <li>Drum kit health check</li>
+                  <li>Drum head replacement</li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>
@@ -38,11 +39,11 @@ const Packages = () => {
             <Card.Body>
               <Card.Title className="text-center">Platinum</Card.Title>
               <Card.Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-                voluptatum, fugit ut necessitatibus nulla repellat. Lorem ipsum
-                dolor, sit amet consectetur adipisicing elit. Accusantium minus
-                expedita exercitationem illo vitae. Quos, ipsa magni. Possimus
-                illo rem ea cum, sint omnis ipsum!
+                Our Gold package includes everything from Silver, plus:
+                <ul>
+                  <li>Premium replacement heads for the top and bottom</li>
+                  <li>Cleaning of drum shells, rims and lugs</li>
+                </ul>
               </Card.Text>
             </Card.Body>
           </Card>
