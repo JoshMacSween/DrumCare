@@ -2,22 +2,37 @@ const packageData = [
   {
     id: 1,
     name: 'Bronze',
-    subHeading: 'Our bronze package consists of:',
-    features: ['Full kit tuning'],
+    subHeading: 'Our bronze package is great for a quick health check and tuning:',
+    features: [
+      'Drum kit health check',
+      'Removal of old drum heads',
+      'Installation of new drum heads',
+      'Tuning',
+    ],
   },
   {
     id: 2,
     name: 'Silver',
-    subHeading: 'Everything from the Bronze Package, plus:',
-    features: ['Replacement of top heads', 'Drum kit health check'],
+    subHeading:
+      'Our most popular, the silver package gives your kit a deep cleaning from our technicians:',
+    features: [
+      'Removal of old drum heads',
+      'Cleaning of drum shells, rims and lugs',
+      'Installation of new drum heads',
+      'Tuning',
+    ],
   },
   {
     id: 3,
     name: 'Gold',
-    subHeading: 'Our Gold package includes everything from Silver, plus:',
+    subHeading:
+      'Our Gold package is for when you want your kit to sound brand new',
     features: [
-      'Premium replacement heads for the top and resonant heads',
+      'Drum kit health check',
+      'Installation of new drum heads and resonant heads',
+      'Removal of old drum heads and resonant heads',
       'Cleaning of drum shells, rims and lugs',
+      'Tuning',
     ],
   },
 ]
