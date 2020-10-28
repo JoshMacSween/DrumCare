@@ -14,7 +14,7 @@ const packageData = [
     id: 2,
     name: 'Silver',
     subHeading:
-      'Our most popular, the silver package gives your kit a deep cleaning from our technicians:',
+      'Our most popular, the silver package includes a deep cleaning:',
     features: [
       'Removal of old drum heads',
       'Cleaning of drum shells, rims and lugs',

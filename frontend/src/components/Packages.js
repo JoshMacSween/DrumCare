@@ -1,18 +1,27 @@
 import React from 'react'
 // import { packageData as kitPackages } from '../packageData'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import {
+  Container,
+  Row,
+  Col,
+  Card,
+  ListGroup,
+  ListGroupItem,
+} from 'react-bootstrap'
 
 const Packages = (props) => {
   return (
     <Container>
       <Row>
         <Col>
-          <Card className="rounded">
+          <Card className="rounded bg-dark">
             <Card.Body>
-              <Card.Title className="text-center">{props.name}</Card.Title>
-              <Card.Text>
+              <Card.Title className="text-center text-white">
+                <Card.Header>{props.name}</Card.Header>
+              </Card.Title>
+              <Card.Text className="text-light">
                 {props.subHeading}
-                <ul>
+                <ul className="py-3 text-light">
                   {props.features.map((feature, i) => {
                     return <li key={i}>{feature}</li>
                   })}
