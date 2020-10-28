@@ -1,48 +1,21 @@
 import React from 'react'
+// import { packageData as kitPackages } from '../packageData'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
-const Packages = () => {
+const Packages = (props) => {
   return (
     <Container>
       <Row>
         <Col>
           <Card className="rounded">
             <Card.Body>
-              <Card.Title className="text-center">Bronze</Card.Title>
+              <Card.Title className="text-center">{props.name}</Card.Title>
               <Card.Text>
-                Our bronze package consists of:
+                {props.subHeading}
                 <ul>
-                  <li>Full kit tuning</li>
-                  <li>$100 for a 4 piece kit</li>
-                  <li>$20 for each additional drum</li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card className="rounded">
-            <Card.Body>
-              <Card.Title className="text-center">Silver</Card.Title>
-              <Card.Text>
-                Everything from the Bronze Package, plus:
-                <ul>
-                  <li>Drum kit health check</li>
-                  <li>Drum head replacement</li>
-                </ul>
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col>
-          <Card className="rounded">
-            <Card.Body>
-              <Card.Title className="text-center">Platinum</Card.Title>
-              <Card.Text>
-                Our Gold package includes everything from Silver, plus:
-                <ul>
-                  <li>Premium replacement heads for the top and bottom</li>
-                  <li>Cleaning of drum shells, rims and lugs</li>
+                  {props.features.map((feature, i) => {
+                    return <li key={i}>{feature}</li>
+                  })}
                 </ul>
               </Card.Text>
             </Card.Body>
