@@ -19,9 +19,8 @@ const MainContent = () => {
         <Row>
           {packageData.map((pkg, i) => {
             return (
-              <Col>
+              <Col key={i}>
                 <Packages
-                  key={i}
                   name={pkg.name}
                   subHeading={pkg.subHeading}
                   features={pkg.features}
@@ -32,7 +31,7 @@ const MainContent = () => {
         </Row>
 
         <div className="text-center py-3">
-          <Button  href="/form">Book Now</Button>
+          <Button href="/form">Book Now</Button>
         </div>
       </Container>
     </>

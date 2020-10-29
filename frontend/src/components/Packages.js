@@ -18,9 +18,9 @@ const Packages = (props) => {
             <Card.Body>
               <Card.Title className="text-center text-white">
                 <Card.Header>{props.name}</Card.Header>
+                <Card.Subtitle className="text-light text-muted">{props.subHeading}</Card.Subtitle>
               </Card.Title>
               <Card.Text className="text-light">
-                {props.subHeading}
                 <ul className="py-3 text-light">
                   {props.features.map((feature, i) => {
                     return <li key={i}>{feature}</li>

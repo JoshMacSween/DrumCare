@@ -28,6 +28,7 @@ app.get('/inquiry/:id', (req, res) => {
 })
 
 app.post('/form', (req, res) => {
+
   const output = `
     <p>Customer Inquiry</p>
     <h3>Contact details</h3>
@@ -49,9 +50,9 @@ app.post('/form', (req, res) => {
       user: 'drumcareyeg@gmail.com',
       pass: process.env.GMAIL_PASS,
     },
-    // tls: {
-    //   rejectUnauthorized: false,
-    // },
+    tls: {
+      rejectUnauthorized: false,
+    },
   })
 
   let info = transporter.sendMail({
@@ -64,6 +65,6 @@ app.post('/form', (req, res) => {
 
 })
 
-const PORT = process.env.PORT || 5000
+const PORT = 5000
 
 app.listen(PORT, console.log(`Server is listening on port ${PORT}`))

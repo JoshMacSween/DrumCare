@@ -21,6 +21,7 @@ const ContactScreen = () => {
       .post('http://localhost:5000/form', { ...inquiry })
       .then((response) => {
         setResult(response.data)
+        console.log(inquiry)
         setInquiry({
           name: '',
           email: '',
@@ -113,12 +114,20 @@ const ContactScreen = () => {
             onChange={handleChangeKit}
           />
         </Form.Group>
-        <Form.Group controlId="package">
-          <Form.Label>What Package Would You Like</Form.Label>
-          <Form.Control defaultValue={inquiry.package} required as="select" onChange={handleChangePackage}>
-            <option>Bronze</option>
-            <option>Silver</option>
-            <option>Gold</option>
+        <Form.Group controlId="packackage">
+          <Form.Label>What Service Would You Like</Form.Label>
+          <Form.Control
+            defaultValue={inquiry.package}
+            required
+            as="select"
+            onChange={handleChangePackage}
+          >
+            <option>Tuning</option>
+            <option>Bronze Maintenance Package</option>
+            <option>Silver Maintenance Package</option>
+            <option>Gold Maintenance Package</option>
+            <option>Other</option>
+            {inquiry.package === 'Other' ? alert('Inquiry Sent!') : 'null'}
           </Form.Control>
         </Form.Group>
 
@@ -133,7 +142,7 @@ const ContactScreen = () => {
           /> */}
         {/* </Form.Group> */}
         <div className="text-center">
-          <Button variant="primary" type="submit">
+          <Button variant="primary" type="submit" href="/sent">
             Submit
           </Button>
         </div>

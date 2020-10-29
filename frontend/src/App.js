@@ -6,6 +6,7 @@ import Home from './screens/HomeScreen'
 import './bootstrap.min (lux).css'
 import './index.css'
 import Form from './screens/FormScreen'
+import Sent from './screens/SentScreen'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Container>
           <Route path="/" component={Home} exact />
           <Route path="/form" component={Form} />
+          <Route path="/sent" component={Sent} />
         </Container>
       </main>
       <Footer />
