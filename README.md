@@ -6,4 +6,4 @@ which contains name, email, date, package desired etc. If the "Other" option is 
 a textbox appears where the user can send in a custom message. Currently DrumCare is in development, and uses nodemailer to send to a company email. 
 
 ![Home Page](frontend/src/images/HomePage.png)
-Format: ![Alt Text](https://github.com/JoshMacSween/DrumCare/blob/main/frontend/src/images/HomePage.png)
+<!-- Format: ![Alt Text](https://github.com/JoshMacSween/DrumCare/blob/main/frontend/src/images/HomePage.png) -->
