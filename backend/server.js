@@ -28,7 +28,6 @@ app.get('/inquiry/:id', (req, res) => {
 })
 
 app.post('/form', (req, res) => {
-
   const output = `
     <p>Customer Inquiry</p>
     <h3>Contact details</h3>
@@ -40,7 +39,8 @@ app.post('/form', (req, res) => {
       <li>Kit Size: ${req.body.kitSize}</li>
       <li>Package: ${req.body.package}</li>
     </ul>
-  `
+    <h4>Custom Message:</h4><p>${req.body.inquiryText}</p>
+    `
 
   let transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
@@ -62,7 +62,7 @@ app.post('/form', (req, res) => {
     text: 'Hello world?',
     html: output,
   })
-
+  res.json({success: true})
 })
 
 const PORT = 5000

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Form, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const ContactScreen = () => {
@@ -11,6 +12,7 @@ const ContactScreen = () => {
     kitSize: '',
     package: 'Bronze',
     message: '',
+    inquiryText: '',
   })
 
   const [result, setResult] = useState(null)
@@ -19,8 +21,7 @@ const ContactScreen = () => {
     event.preventDefault()
     axios
       .post('http://localhost:5000/form', { ...inquiry })
-      .then((response) => {
-        setResult(response.data)
+      .then(() => {
         console.log(inquiry)
         setInquiry({
           name: '',
@@ -29,10 +30,11 @@ const ContactScreen = () => {
           kitSize: '',
           package: '',
           message: '',
+          inquiryText: '',
         })
       })
       .catch(() => {
-        setResult({
+        setInquiry({
           success: false,
           message: 'Message send failure',
         })
@@ -63,10 +65,10 @@ const ContactScreen = () => {
     const currentData = event.target.value
     setInquiry({ ...inquiry, package: currentData })
   }
-  // const handleChangeInquiryText = (event) => {
-  //   const currentData = event.target.value
-  //   setInquiry({ ...inquiry, inquiryText: currentData })
-  // }
+  const handleChangeInquiryText = (event) => {
+    const currentData = event.target.value
+    setInquiry({ ...inquiry, inquiryText: currentData })
+  }
 
   return (
     <>
@@ -127,8 +129,21 @@ const ContactScreen = () => {
             <option>Silver Maintenance Package</option>
             <option>Gold Maintenance Package</option>
             <option>Other</option>
-            {inquiry.package === 'Other' ? alert('Inquiry Sent!') : 'null'}
           </Form.Control>
+          {inquiry.package === 'Other' ? (
+            <Form.Group>
+              <Form.Label className="mt-3">
+                What would you like to tell us?
+              </Form.Label>
+              <Form.Control
+                as="textarea"
+                rows={3}
+                name="inquiryText"
+                value={inquiry.inquiryText}
+                onChange={handleChangeInquiryText}
+              />
+            </Form.Group>
+          ) : null}
         </Form.Group>
 
         {/* <Form.Group controlId="inquiryText">
@@ -139,12 +154,14 @@ const ContactScreen = () => {
             name="inquiryText"
             value={inquiry.inquiryText}
             onChange={handleChangeInquiryText}
-          /> */}
-        {/* </Form.Group> */}
+          />
+        </Form.Group> */}
         <div className="text-center">
-          <Button variant="primary" type="submit" href="/sent">
-            Submit
-          </Button>
+          <Link to='/'>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Link>
         </div>
       </Form>
     </>
