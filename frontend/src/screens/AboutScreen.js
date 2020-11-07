@@ -25,12 +25,13 @@ export default function About() {
       </Row>
       <h5 className="py-2 text-center">Meet the DrumCare team:</h5>
       <Row className="py-2">
-        <Col>
-          Brandi Image
-        </Col>
+        {/* <Col>
+          <Image className="empImg" src="/images/BB_Drums.jpg" fluid/>
+        </Col> */}
         <Col className="py-2">
           <Card>
             <Card.Body className="rounded bg-dark text-white">
+              <Image src="/images/BB_Drums.jpg" fluid rounded/>
               <Card.Title>
                 <Card.Header>Brandi</Card.Header>
               </Card.Title>
@@ -45,12 +46,10 @@ export default function About() {
             </Card.Body>
           </Card>
         </Col>
-      </Row>
-      <Row>
-        <Col>Jon Image</Col>
         <Col className="py-3">
           <Card>
             <Card.Body className="rounded bg-dark text-white">
+              <Image src="/images/JG_Drums.jpg" fluid rounded />
               <Card.Title>
                 <Card.Header>Jon</Card.Header>
               </Card.Title>
@@ -64,6 +63,28 @@ export default function About() {
             </Card.Body>
           </Card>
         </Col>
+      </Row>
+      <Row>
+        {/* <Col>
+          <Image className="empImg" src="/images/JG_Drums.jpg" fluid/>
+        </Col> */}
+        {/* <Col className="py-3">
+          <Card>
+            <Card.Body className="rounded bg-dark text-white">
+              <Card.Img src="/images/JG_Drums.jpg"/>
+              <Card.Title>
+                <Card.Header>Jon</Card.Header>
+              </Card.Title>
+              <Card.Text>
+                Drum Instructor by day, professional drummer by night with a
+                Bachelors Degree in Drum Performance from MacEwan University,
+                Jon knows the importance of a good sounding kit. Apart from
+                flawlessly laying out fills in odd time signatures Jon enjoys
+                long walks on the beach with a cup of black coffee.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </Col> */}
       </Row>
       <Row>
         <Col className="text-center">
