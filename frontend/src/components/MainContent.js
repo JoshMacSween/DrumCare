@@ -11,8 +11,7 @@ const MainContent = () => {
 
         <blockquote className="blockquote ml-4">
           <i>
-            Professional drum tuning and maintenance service. Convenient and
-            hassle-free
+          Professional drum kit tuning and maintenance, convenient and hassle free. We’ll come to you!
           </i>
         </blockquote>
 
