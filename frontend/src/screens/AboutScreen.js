@@ -15,25 +15,31 @@ export default function About() {
       <Row className="text-center">
         <Col>
           <h3>About DrumCare</h3>
+          <hr />
         </Col>
       </Row>
       <Row>
-        Here at DrumCare we do just what our name says, care about drums. As
-        professional drummers in the industry we know that one of the most
-        important aspects to a fine playing drum kit is whether or not it is in
-        tune.
+        <p>
+          Here at DrumCare we do just what our name says, care about drums. As
+          professional drummers in the industry we know that one of the most
+          important aspects to a fine playing drum kit is whether or not it is
+          in tune.
+        </p>
       </Row>
-      <h5 className="py-2 text-center">Meet the DrumCare team:</h5>
+      <h5 className="py-2 text-center">Meet the DrumCare team</h5>
+      <hr />
       <Row className="py-2">
         {/* <Col>
           <Image className="empImg" src="/images/BB_Drums.jpg" fluid/>
         </Col> */}
-        <Col className="py-2">
+        <Col className="py-3">
           <Card>
             <Card.Body className="rounded bg-dark text-white">
-              <Image src="/images/BB_Drums.jpg" fluid rounded/>
+              <Image src="/images/BB_Drums.jpg" fluid rounded />
               <Card.Title>
-                <Card.Header>Brandi</Card.Header>
+                <Card.Header>
+                  <h3 className="text-white pt-3">Brandi</h3>
+                </Card.Header>
               </Card.Title>
               <Card.Text>
                 With a Bachelors Degree in Music Composition with a minor in
@@ -51,7 +57,9 @@ export default function About() {
             <Card.Body className="rounded bg-dark text-white">
               <Image src="/images/JG_Drums.jpg" fluid rounded />
               <Card.Title>
-                <Card.Header>Jon</Card.Header>
+                <Card.Header>
+                  <h3 className="text-white pt-2">Jon</h3>
+                </Card.Header>
               </Card.Title>
               <Card.Text>
                 Drum Instructor by day, professional drummer by night with a
@@ -89,16 +97,20 @@ export default function About() {
       <Row>
         <Col className="text-center">
           <h4>Mission</h4>
+          <hr />
         </Col>
       </Row>
       <Row>
-        Our mission is to make drum maintenance as easy as possible. Servicing
-        schools, venues, parents, beginner drummers and drummers that would
-        rather spend their time playing the drums than tuning them.
+        <p>
+          Our mission is to make drum maintenance as easy as possible. Servicing
+          schools, venues, parents, beginner drummers and drummers that would
+          rather spend their time playing the drums than tuning them.
+        </p>
       </Row>
       <Row>
         <Col className="text-center">
           <h4>Services</h4>
+          <hr />
         </Col>
       </Row>
       <Row>

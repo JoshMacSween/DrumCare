@@ -14,11 +14,11 @@ const Packages = (props) => {
     <Container>
       <Row>
         <Col>
-          <Card className="rounded bg-dark">
+          <Card className="rounded bg-primary">
             <Card.Body>
               <Card.Title className="text-center text-white">
-                <Card.Header>{props.name}</Card.Header>
-                <Card.Subtitle className="text-light text-muted">{props.subHeading}</Card.Subtitle>
+                <Card.Header><h4 className="text-white"><strong>{props.name}</strong></h4></Card.Header>
+                <Card.Subtitle className="text-light"><p><strong>{props.subHeading}</strong></p></Card.Subtitle>
               </Card.Title>
               {/* <Card.Text className="text-light"> */}
                 <ul className="py-3 text-light">

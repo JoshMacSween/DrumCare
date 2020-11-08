@@ -9,3 +9,15 @@ h1, h2, h3, h4, h5, h6 {
 .empImg {
   max-height: 65%;
 }
+
+p {
+  font-size: 1.25em;
+}
+
+li {
+  font-size: 1.15em;
+}
+
+/* body {
+  background-color: gainsboro;
+} */

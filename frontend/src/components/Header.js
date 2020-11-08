@@ -6,9 +6,9 @@ import Form from '../screens/FormScreen'
 const Header = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark" expand="lg">
+      <Navbar bg="primary" variant="primary" expand="lg">
           <LinkContainer to="/">
-            <Navbar.Brand>DrumCare</Navbar.Brand>
+            <Navbar.Brand className="text-white">DrumCare</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -17,10 +17,10 @@ const Header = () => {
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer> */}
               <LinkContainer to="/about">
-                <Nav.Link>About</Nav.Link>
+                <Nav.Link className="text-white">About</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/form">
-                <Nav.Link>Contact</Nav.Link>
+                <Nav.Link className="text-white">Contact</Nav.Link>
               </LinkContainer>
               {/* <NavDropdown title="Packages" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Silver</NavDropdown.Item>

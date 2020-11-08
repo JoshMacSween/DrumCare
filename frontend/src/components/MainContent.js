@@ -8,12 +8,11 @@ const MainContent = () => {
     <>
       <Container>
         <h1>DrumCare YEG</h1>
+        <hr />
 
         <blockquote className="blockquote ml-4">
-          <i>
-            Professional drum kit tuning and maintenance, convenient and hassle
-            free. We’ll come to you!
-          </i>
+          Our maintenance packages offer a full drum kit refresh! Choose from
+          one of our three packages below:
         </blockquote>
 
         <Row>
