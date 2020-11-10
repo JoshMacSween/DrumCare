@@ -13,10 +13,10 @@ export default function About() {
   return (
     <Container className="py-2">
       <Row className="text-center">
-        <Col>
-          <h3>About DrumCare</h3>
-          <hr />
+        <Col className="bg-dark py-3">
+          <h3 className="text-light">About DrumCare</h3>
         </Col>
+        <hr />
       </Row>
       <Row>
         <p>
@@ -84,9 +84,6 @@ export default function About() {
           </Card>
         </Col>
       </Row>
-      <Row>
-      </Row>
-
     </Container>
   )
 }
