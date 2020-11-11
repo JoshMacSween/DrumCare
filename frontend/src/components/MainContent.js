@@ -1,13 +1,24 @@
 import React from 'react'
 import Packages from './Packages'
 import packageData from '../packageData'
-import { Container, Row, Col, Button, Card } from 'react-bootstrap'
+import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
 
 const MainContent = () => {
   return (
     <>
       <Container>
-        <h1>DrumCare YEG</h1>
+        <Row>
+          <Col className="text-center">
+            <Image
+              className="bannerLogo"
+              src="/images/facebook_cover_photo_2.png"
+              fluid
+              rounded
+            />
+          </Col>
+        </Row>
+        {/* <Image className="bannerLogo"src="/images/dc_logo.png" fluid rounded /> */}
+        {/* <h1>DrumCare YEG</h1> */}
         <hr />
         <Row>
           <Col className="text-center">
@@ -67,10 +78,10 @@ const MainContent = () => {
         </Row>
         <Row>
           <Col className="text-center pt-3">
-          <hr />
+            <hr />
             <h4>Our maintenance packages offer a full drum kit refresh!</h4>
             <h4>Choose from one of our three packages below:</h4>
-          <hr />
+            <hr />
           </Col>
         </Row>
         <Row>

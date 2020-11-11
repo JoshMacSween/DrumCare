@@ -25,3 +25,9 @@ li {
 /* body {
   background-color: gainsboro;
 } */
+
+.bannerLogo {
+  max-height: 275px;
+  /* max-width: 150%; */
+  border: 1px solid black;
+}

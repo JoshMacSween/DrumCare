@@ -41,9 +41,7 @@ export default function About() {
       </Row>
       <h5 className="py-2 text-center">Meet the DrumCare team</h5>
       <Row className="py-2">
-        {/* <Col>
-          <Image className="empImg" src="/images/BB_Drums.jpg" fluid/>
-        </Col> */}
+
         <Col className="py-3">
           <Card>
             <Card.Body className="rounded bg-dark text-white">
