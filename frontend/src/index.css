@@ -1,6 +1,6 @@
-* {
+/* * {
   font-size: large;
-}
+} */
 
 main {
   min-height: 80vh;
@@ -14,13 +14,9 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 65%;
 }
 
-p {
-  font-size: 1.25em;
-}
-
-li {
+/* li {
   font-size: 1.15em;
-}
+} */
 
 /* body {
   background-color: gainsboro;
