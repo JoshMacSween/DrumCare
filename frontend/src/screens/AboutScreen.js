@@ -8,6 +8,7 @@ import {
   ListGroupItem,
   Image,
 } from 'react-bootstrap'
+import '../about.css'
 
 export default function About() {
   return (
@@ -18,13 +19,14 @@ export default function About() {
         </Col>
         <hr />
       </Row>
+      <br />
       <Row>
-        <p>
-          Here at DrumCare we do just what our name says, care about drums. As
-          professional drummers in the industry we know that one of the most
-          important aspects to a fine playing drum kit is whether or not it is
-          in tune.
-        </p>
+          <p>
+            Here at DrumCare we do just what our name says, care about drums. As
+            professional drummers in the industry we know that one of the most
+            important aspects to a fine playing drum kit is whether or not it is
+            in tune.
+          </p>
       </Row>
       <Row>
         <Col className="text-center">
@@ -46,7 +48,6 @@ export default function About() {
             <Card.Body className="rounded bg-primary text-white">
               <Image src="/images/BB_Drums.jpg" fluid rounded />
               <Card.Title>
-
                 <Card.Header>
                   <h3 className="text-white pt-3">Brandi</h3>
                 </Card.Header>
@@ -68,7 +69,6 @@ export default function About() {
               <Image src="/images/JG_Drums.jpg" fluid rounded />
 
               <Card.Title>
-
                 <Card.Header>
                   <h3 className="text-white pt-2">Jon</h3>
                 </Card.Header>

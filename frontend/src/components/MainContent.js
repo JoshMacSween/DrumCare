@@ -32,7 +32,7 @@ const MainContent = () => {
               <Card.Body>
                 <Card.Title>
                   <Card.Header className="text-center text-light">
-                    Tuning:
+                    <h5 className="text-white">Tuning</h5>
                   </Card.Header>
                 </Card.Title>
                 <Card.Text>
@@ -48,7 +48,9 @@ const MainContent = () => {
             <Card className="rounded bg-primary text-white">
               <Card.Body>
                 <Card.Title className="text-center">
-                  <Card.Header>Drum Head Replacement:</Card.Header>
+                  <Card.Header>
+                    <h5 className="text-white">Drum Head Replacement</h5>
+                  </Card.Header>
                 </Card.Title>
                 <Card.Text>
                   Drum heads get beaten and worn over time and need replacing.
@@ -67,11 +69,16 @@ const MainContent = () => {
             <Card className="rounded bg-primary text-white">
               <Card.Body>
                 <Card.Title className="text-center">
-                  <Card.Header>Kit Installation:</Card.Header>
+                  <Card.Header>
+                    <h5 className="text-white">Kit Installation</h5>
+                    <Card.Subtitle>Test</Card.Subtitle>
+                  </Card.Header>
                 </Card.Title>
-                Have a brand new drum kit and not sure where to start when it
-                comes to setting it up? No worries, we will come set it up for
-                you where ever you like and get it sounding rock star ready.
+                <Card.Text>
+                  Have a brand new drum kit and not sure where to start when it
+                  comes to setting it up? No worries, we will come set it up for
+                  you where ever you like and get it sounding rock star ready.
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
