@@ -17,7 +17,7 @@ const Packages = (props) => {
           <Card className="rounded bg-primary">
             <Card.Body>
               <Card.Title className="text-center text-white">
-                <Card.Header><h4 className="text-white"><strong>{props.name}</strong></h4></Card.Header>
+                <Card.Header><h4 className="text-white"><strong>{props.name}</strong></h4></Card.Header><br/>
                 <Card.Subtitle className="text-light"><p><strong>{props.subHeading}</strong></p></Card.Subtitle>
               </Card.Title>
               {/* <Card.Text className="text-light"> */}

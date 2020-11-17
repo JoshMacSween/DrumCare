@@ -13,7 +13,7 @@ export default function About() {
   return (
     <Container className="py-2">
       <Row className="text-center">
-        <Col className="bg-dark py-3">
+        <Col className="bg-primary py-3">
           <h3 className="text-light">About DrumCare</h3>
         </Col>
         <hr />
@@ -41,12 +41,12 @@ export default function About() {
       </Row>
       <h5 className="py-2 text-center">Meet the DrumCare team</h5>
       <Row className="py-2">
-
         <Col className="py-3">
           <Card>
-            <Card.Body className="rounded bg-dark text-white">
+            <Card.Body className="rounded bg-primary text-white">
               <Image src="/images/BB_Drums.jpg" fluid rounded />
               <Card.Title>
+
                 <Card.Header>
                   <h3 className="text-white pt-3">Brandi</h3>
                 </Card.Header>
@@ -64,9 +64,11 @@ export default function About() {
         </Col>
         <Col className="py-3">
           <Card>
-            <Card.Body className="rounded bg-dark text-white">
+            <Card.Body className="rounded bg-primary text-white">
               <Image src="/images/JG_Drums.jpg" fluid rounded />
+
               <Card.Title>
+
                 <Card.Header>
                   <h3 className="text-white pt-2">Jon</h3>
                 </Card.Header>
