@@ -1,6 +1,7 @@
 import React from 'react'
 import Packages from './Packages'
-import packageData from '../packageData'
+import packageData, { serviceData } from '../packageData'
+import ServiceCard from './ServiceCard'
 import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
 
 const MainContent = () => {
@@ -27,61 +28,17 @@ const MainContent = () => {
           </Col>
         </Row>
         <Row>
-          <Col>
-            <Card className="rounded bg-primary text-white">
-              <Card.Body>
-                <Card.Title>
-                  <Card.Header className="text-center text-light">
-                    <h5 className="text-white">Tuning</h5>
-                  </Card.Header>
-                </Card.Title>
-                <Card.Text>
-                  Your drum kit isn't trash! It probably just needs to be tuned.
-                  Tuning drums can be a difficult and time consuming process, so
-                  why not leave it to us! We’ll get your kit sounding top notch
-                  so you can just focus on playing.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="rounded bg-primary text-white">
-              <Card.Body>
-                <Card.Title className="text-center">
-                  <Card.Header>
-                    <h5 className="text-white">Drum Head Replacement</h5>
-                  </Card.Header>
-                </Card.Title>
-                <Card.Text>
-                  Drum heads get beaten and worn over time and need replacing.
-                  Depending on the amount of pounding you're giving your drum
-                  heads, we recommend changing them at least once a year. If you
-                  notice many dents or wear away of coating on your drum heads,
-                  its time for new heads! Our drum head replacement service
-                  saves you the hassle of finding new heads. Give us your drum
-                  sizes, preference of clear or coated and we’ll bring them to
-                  you and replace your old ones!
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="rounded bg-primary text-white">
-              <Card.Body>
-                <Card.Title className="text-center">
-                  <Card.Header>
-                    <h5 className="text-white">Kit Installation</h5>
-                    <Card.Subtitle>Test</Card.Subtitle>
-                  </Card.Header>
-                </Card.Title>
-                <Card.Text>
-                  Have a brand new drum kit and not sure where to start when it
-                  comes to setting it up? No worries, we will come set it up for
-                  you where ever you like and get it sounding rock star ready.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+          {serviceData.map((data) => {
+            return (
+              <div>
+                <ServiceCard
+                  title={data.title}
+                  description={data.description}
+                />
+                <br />
+              </div>
+            )
+          })}
         </Row>
         <Row>
           <Col className="text-center pt-3">

@@ -2,7 +2,7 @@
   "name": "drumcare",
   "version": "1.0.0",
   "description": "Online home for a drum maintenance business local to edmonton",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server",
