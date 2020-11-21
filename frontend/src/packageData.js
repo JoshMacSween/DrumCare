@@ -43,11 +43,11 @@ export const serviceData = [
     id: '1',
     title: 'Tuning',
     description:
-      "Your drum kit isn't trash! It probably just needs to be tuned. Tuning drums can be a difficult and time consuming process, so why not leave it to us! We’ll get your kit sounding top notch so you can just focus on playing.",
+      "Your drum kit isn't trash! It probably just needs to be tuned. Tuning drums can be a difficult and time consuming process, so why not leave it to us! We’ll get your kit sounding top notch so you can just focus on playing. ",
   },
   {
     id: '2',
-    title: 'Drum Head Replacement',
+    title: 'Head Replacement',
     description:
       "Drum heads get beaten and worn over time and need replacing. Depending on the amount of pounding you're giving your drum heads, we recommend changing them at least once a year. If you notice many dents or wear away of coating on your drum heads, its time for new heads! Our drum head replacement service saves you the hassle of finding new heads. Give us your drum sizes, preference of clear or coated and we’ll bring them to you and replace your old ones!",
   },

@@ -72,7 +72,7 @@ const ContactScreen = () => {
 
   return (
     <>
-      <Form onSubmit={handleSubmit} className="py-3">
+      <Form onSubmit={handleSubmit} data-netlify="true" className="py-3">
         <Form.Group controlId="exampleForm.ControlInput1">
           <Form.Label>Your Name</Form.Label>
           <Form.Control

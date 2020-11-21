@@ -1,10 +1,10 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Card, ListGroup, ListGroupItem } from 'react-bootstrap'
 
 export default function ServiceCard({ title, description }) {
   return (
     <>
-      <Card className="rounded bg-primary text-white">
+      {/* <Card className="rounded bg-primary text-white">
         <Card.Body>
           <Card.Title>
             <Card.Header className="text-center text-light">
@@ -13,7 +13,11 @@ export default function ServiceCard({ title, description }) {
           </Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
-      </Card>
+      </Card> */}
+      <ListGroup className="serviceHolder" horizontal bg="black">
+        <ListGroupItem className="serviceTitle" variant="light"><h5>{title}</h5></ListGroupItem>
+        <ListGroupItem className="serviceDesc" variant="light">{description}</ListGroupItem>
+      </ListGroup>
     </>
   )
 }

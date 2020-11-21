@@ -19,3 +19,18 @@ h6 {
   max-height: 275px;
   border: 1px solid black;
 }
+
+.serviceTitle {
+  min-width: 18%;
+  /* background-color: #1a1a1a; */
+  background-color: black;
+  color: white;
+
+}
+
+.serviceDesc {
+  font-size: medium;
+  text-align: center;
+  background-color: #1a1a1a;
+  color: white;
+}
