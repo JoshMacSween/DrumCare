@@ -28,12 +28,13 @@ const MainContent = () => {
           </Col>
         </Row>
         <Row>
-          {serviceData.map((data) => {
+          {serviceData.map((data, i) => {
             return (
-              <div>
+              <div key={i}>
                 <ServiceCard
                   title={data.title}
                   description={data.description}
+                  key={i}
                 />
                 <br />
               </div>
