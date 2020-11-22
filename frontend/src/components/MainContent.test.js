@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import MainContent from './MainContent'
 import { Container } from 'react-bootstrap'
-// import ServiceCard from './ServiceCard'
+import ServiceCard from './ServiceCard'
 
 test('Renders a Heading', () => {
   const div = document.createElement('div')
@@ -15,3 +15,8 @@ test('Renders Horizontal Rule', () => {
   ReactDOM.render(<MainContent />, div)
   expect(div.querySelector('hr')).toBeTruthy()
 })
+
+// it('Renders without crashing', () => {
+//   const div = document.createElement('div')
+//   ReactDOM.render(<MainContent />)
+// })

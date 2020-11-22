@@ -1,0 +1,10 @@
+import React, { createElement } from 'react'
+import renderer from 'react-test-renderer'
+import App from './App'
+
+test('Creates App Snapshot', () => {
+  const component = renderer.create(<App />)
+  const tree = component.toJSON();
+  expect(tree).toMatchSnapshot()
+})
+

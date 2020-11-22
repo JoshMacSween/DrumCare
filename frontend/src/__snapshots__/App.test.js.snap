@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Creates App Snapshot 1`] = `
+Array [
+  <nav
+    className="navbar navbar-expand-lg navbar-primary bg-primary"
+  >
+    <a
+      className="text-white active navbar-brand"
+      href="/"
+      onClick={[Function]}
+      style={Object {}}
+    >
+      DrumCare
+    </a>
+    <button
+      aria-controls="basic-navbar-nav"
+      aria-label="Toggle navigation"
+      className="navbar-toggler collapsed"
+      onClick={[Function]}
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      aria-expanded={null}
+      className="navbar-collapse collapse"
+      id="basic-navbar-nav"
+    >
+      <div
+        className="ml-auto navbar-nav"
+        onKeyDown={[Function]}
+      >
+        <a
+          className="text-white nav-link"
+          data-rb-event-key="/about"
+          href="/about"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          About
+        </a>
+        <a
+          className="text-white nav-link"
+          data-rb-event-key="/form"
+          href="/form"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>,
+  <main
+    className="py-3"
+  >
+    <div
+      className="container"
+    >
+      <div>
+        <div
+          className="container"
+        >
+          <div
+            className="row"
+          >
+            <div
+              className="text-center col"
+            >
+              <img
+                className="bannerLogo img-fluid rounded"
+                src="/images/facebook_cover_photo_2.png"
+              />
+            </div>
+          </div>
+          <hr />
+          <div
+            className="row"
+          >
+            <div
+              className="text-center col"
+            >
+              <h4>
+                Services
+              </h4>
+              <hr />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div>
+              <div
+                bg="black"
+                className="serviceHolder list-group list-group-horizontal"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="serviceTitle list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <h5>
+                    Tuning
+                  </h5>
+                </div>
+                <div
+                  className="serviceDesc list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  Your drum kit isn't trash! It probably just needs to be tuned. Tuning drums can be a difficult and time consuming process, so why not leave it to us! We’ll get your kit sounding top notch so you can just focus on playing. 
+                </div>
+              </div>
+              <br />
+            </div>
+            <div>
+              <div
+                bg="black"
+                className="serviceHolder list-group list-group-horizontal"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="serviceTitle list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <h5>
+                    Head Replacement
+                  </h5>
+                </div>
+                <div
+                  className="serviceDesc list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  Drum heads get beaten and worn over time and need replacing. Depending on the amount of pounding you're giving your drum heads, we recommend changing them at least once a year. If you notice many dents or wear away of coating on your drum heads, its time for new heads! Our drum head replacement service saves you the hassle of finding new heads. Give us your drum sizes, preference of clear or coated and we’ll bring them to you and replace your old ones!
+                </div>
+              </div>
+              <br />
+            </div>
+            <div>
+              <div
+                bg="black"
+                className="serviceHolder list-group list-group-horizontal"
+                onKeyDown={[Function]}
+              >
+                <div
+                  className="serviceTitle list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  <h5>
+                    Kit Installation
+                  </h5>
+                </div>
+                <div
+                  className="serviceDesc list-group-item list-group-item-light"
+                  data-rb-event-key={null}
+                  disabled={false}
+                  onClick={[Function]}
+                >
+                  Have a brand new drum kit and not sure where to start when it comes to setting it up? No worries, we will come set it up for you whereever you like and get it sounding rock star ready.
+                </div>
+              </div>
+              <br />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="text-center pt-3 col"
+            >
+              <hr />
+              <h4>
+                Our maintenance packages offer a full drum kit refresh!
+              </h4>
+              <h4>
+                Choose from one of our three packages below:
+              </h4>
+              <hr />
+            </div>
+          </div>
+          <div
+            className="row"
+          >
+            <div
+              className="col"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col"
+                  >
+                    <div
+                      className="rounded bg-primary card"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <div
+                          className="text-center text-white card-title h5"
+                        >
+                          <div
+                            className="card-header"
+                          >
+                            <h4
+                              className="text-white"
+                            >
+                              <strong>
+                                Bronze
+                              </strong>
+                            </h4>
+                          </div>
+                          <br />
+                          <div
+                            className="text-light card-subtitle h6"
+                          >
+                            <p>
+                              <strong>
+                                Our bronze package is great for a quick health check and tuning:
+                              </strong>
+                            </p>
+                          </div>
+                        </div>
+                        <ul
+                          className="py-3 text-light"
+                        >
+                          <li>
+                            Drum kit health check
+                          </li>
+                          <li>
+                            Removal of old drum heads
+                          </li>
+                          <li>
+                            Installation of new drum heads
+                          </li>
+                          <li>
+                            Tuning
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col"
+                  >
+                    <div
+                      className="rounded bg-primary card"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <div
+                          className="text-center text-white card-title h5"
+                        >
+                          <div
+                            className="card-header"
+                          >
+                            <h4
+                              className="text-white"
+                            >
+                              <strong>
+                                Silver
+                              </strong>
+                            </h4>
+                          </div>
+                          <br />
+                          <div
+                            className="text-light card-subtitle h6"
+                          >
+                            <p>
+                              <strong>
+                                Our most popular, the silver package includes a deep cleaning:
+                              </strong>
+                            </p>
+                          </div>
+                        </div>
+                        <ul
+                          className="py-3 text-light"
+                        >
+                          <li>
+                            Removal of old drum heads
+                          </li>
+                          <li>
+                            Cleaning of drum shells, rims and lugs
+                          </li>
+                          <li>
+                            Installation of new drum heads
+                          </li>
+                          <li>
+                            Tuning
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              className="col"
+            >
+              <div
+                className="container"
+              >
+                <div
+                  className="row"
+                >
+                  <div
+                    className="col"
+                  >
+                    <div
+                      className="rounded bg-primary card"
+                    >
+                      <div
+                        className="card-body"
+                      >
+                        <div
+                          className="text-center text-white card-title h5"
+                        >
+                          <div
+                            className="card-header"
+                          >
+                            <h4
+                              className="text-white"
+                            >
+                              <strong>
+                                Gold
+                              </strong>
+                            </h4>
+                          </div>
+                          <br />
+                          <div
+                            className="text-light card-subtitle h6"
+                          >
+                            <p>
+                              <strong>
+                                Our Gold package is for when you want your kit to sound brand new
+                              </strong>
+                            </p>
+                          </div>
+                        </div>
+                        <ul
+                          className="py-3 text-light"
+                        >
+                          <li>
+                            Drum kit health check
+                          </li>
+                          <li>
+                            Installation of new drum heads and resonant heads
+                          </li>
+                          <li>
+                            Removal of old drum heads and resonant heads
+                          </li>
+                          <li>
+                            Cleaning of drum shells, rims and lugs
+                          </li>
+                          <li>
+                            Tuning
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="text-center py-3"
+          >
+            <a
+              className="btn btn-primary"
+              href="/form"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              Book Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>,
+  <footer>
+    <div
+      className="container"
+    >
+      <div
+        className="row"
+      >
+        <div
+          className="col"
+        >
+          <h5
+            className="text-center py-3"
+          >
+            Copyright © 2020 DrumCare
+          </h5>
+        </div>
+      </div>
+    </div>
+  </footer>,
+]
+`;
