@@ -6,7 +6,7 @@ import Form from '../screens/FormScreen'
 const Header = () => {
   return (
     <>
-      <Navbar bg="primary" variant="primary" expand="lg">
+      <Navbar bg="primary" variant="primary">
           <LinkContainer to="/">
             <Navbar.Brand className="text-white">DrumCare</Navbar.Brand>
           </LinkContainer>
