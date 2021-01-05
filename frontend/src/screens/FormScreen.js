@@ -32,9 +32,11 @@ const FormScreen = () => {
                   minWidth: "350px",
                   backgroundColor: "#f7f7f9",
                   border: "none",
+                  color: "#55595c",
                   minHeight: "45px",
-                  fontSize: "large",
-                  fontWeight: "light",
+                  fontWeight: "400",
+                  fontFamily: "arial",
+                  letterSpacing: "1.5px"
                 }}
                 mask="+1 (999)-999-9999"
                 maskChar="_"
