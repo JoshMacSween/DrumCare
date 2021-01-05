@@ -23,9 +23,8 @@ h6 {
 .serviceTitle {
   min-width: 18%;
   /* background-color: #1a1a1a; */
-  background-color: black;
-  color: white;
-
+  background-color: white;
+  color: black;
 }
 
 .serviceDesc {
@@ -33,4 +32,12 @@ h6 {
   text-align: center;
   background-color: #1a1a1a;
   color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-control {
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }

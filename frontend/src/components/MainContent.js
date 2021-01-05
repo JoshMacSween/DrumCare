@@ -1,8 +1,9 @@
-import React from 'react'
-import Packages from './Packages'
-import packageData, { serviceData } from '../packageData'
-import ServiceCard from './ServiceCard'
-import { Container, Row, Col, Button, Card, Image } from 'react-bootstrap'
+import React from "react";
+import Packages from "./Packages";
+import packageData, { serviceData } from "../packageData";
+import ServiceCard from "./ServiceCard";
+import { LinkContainer } from "react-router-bootstrap";
+import { Container, Row, Col, Button, Card, Image } from "react-bootstrap";
 
 const MainContent = () => {
   return (
@@ -25,6 +26,9 @@ const MainContent = () => {
           <Col className="text-center">
             <h4>Services</h4>
             <hr />
+            <LinkContainer to="/form">
+              <Button className="mb-3">Book Now</Button>
+            </LinkContainer>
           </Col>
         </Row>
         <Row>
@@ -34,11 +38,12 @@ const MainContent = () => {
                 <ServiceCard
                   title={data.title}
                   description={data.description}
+
                   key={i}
                 />
                 <br />
               </div>
-            )
+            );
           })}
         </Row>
         <Row>
@@ -57,18 +62,21 @@ const MainContent = () => {
                   name={pkg.name}
                   subHeading={pkg.subHeading}
                   features={pkg.features}
+                  star={pkg.star}
                 />
               </Col>
-            )
+            );
           })}
         </Row>
 
         <div className="text-center py-3">
-          <Button href="/form">Book Now</Button>
+          <LinkContainer to="/form">
+            <Button block>Book Now</Button>
+          </LinkContainer>
         </div>
       </Container>
     </>
-  )
-}
+  );
+};
 
-export default MainContent
+export default MainContent;

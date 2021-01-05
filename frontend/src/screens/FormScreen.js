@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import axios from "axios";
-// import NetlifyForm from "react-ssg-netlify-forms";
-import { useHistory } from "react-router";
+import InputMask from "react-input-mask";
 
 const FormScreen = () => {
   return (
     <Container className="mt-4">
+      <Row>
+        <Col>
+          <h3 className="text-center">Book a Service With Us</h3>
+        </Col>
+      </Row>
       <Form name="contact" method="post" data-netlify="true">
         <Form.Control type="hidden" name="form-name" value="contact" />
 
@@ -23,7 +25,23 @@ const FormScreen = () => {
             </Col>
             <Col>
               <Form.Label>Phone Number</Form.Label>
-              <Form.Control type="number" name="phone number" />
+              <br />
+
+              <InputMask
+                style={{
+                  minWidth: "350px",
+                  backgroundColor: "#f7f7f9",
+                  border: "none",
+                  minHeight: "45px",
+                  fontSize: "large",
+                  fontWeight: "light",
+                }}
+                mask="+1 (999)-999-9999"
+                maskChar="_"
+                type="tel"
+                inputMode="numeric"
+                name="phone number"
+              />
             </Col>
           </Row>
         </Form.Group>
@@ -58,7 +76,11 @@ const FormScreen = () => {
         </Form.Group>
 
         <Form.Label>Details</Form.Label>
-        <Form.Control as="textarea" name="message" />
+        <Form.Control
+          as="textarea"
+          name="message"
+          placeholder="Anything else you'd like us to know?"
+        />
 
         <Button type="submit" block>
           Send

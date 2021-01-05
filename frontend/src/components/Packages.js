@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // import { packageData as kitPackages } from '../packageData'
 import {
   Container,
@@ -7,9 +7,10 @@ import {
   Card,
   ListGroup,
   ListGroupItem,
-} from 'react-bootstrap'
+} from "react-bootstrap";
 
-const Packages = (props) => {
+const Packages = (props, { name, star }) => {
+
   return (
     <Container>
       <Row>
@@ -17,22 +18,31 @@ const Packages = (props) => {
           <Card className="rounded bg-primary">
             <Card.Body>
               <Card.Title className="text-center text-white">
-                <Card.Header><h4 className="text-white"><strong>{props.name}</strong></h4></Card.Header><br/>
-                <Card.Subtitle className="text-light"><p><strong>{props.subHeading}</strong></p></Card.Subtitle>
+                <Card.Header>
+                  <h4 className="text-light">
+                    <strong>{props.name}</strong>
+                  </h4>
+                </Card.Header>
+                <br />
+                <Card.Subtitle className="text-light">
+                  <p>
+                    <strong>{props.subHeading}</strong>
+                  </p>
+                </Card.Subtitle>
               </Card.Title>
               {/* <Card.Text className="text-light"> */}
-                <ul className="py-3 text-light">
-                  {props.features.map((feature, i) => {
-                    return <li key={i}>{feature}</li>
-                  })}
-                </ul>
+              <ul className="py-3 text-light">
+                {props.features.map((feature, i) => {
+                  return <li key={i}>{feature}</li>;
+                })}
+              </ul>
               {/* </Card.Text> */}
             </Card.Body>
           </Card>
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};
 
-export default Packages
+export default Packages;
