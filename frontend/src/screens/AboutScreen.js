@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import {
   Container,
   Row,
@@ -7,8 +7,8 @@ import {
   ListGroup,
   ListGroupItem,
   Image,
-} from 'react-bootstrap'
-import '../about.css'
+} from "react-bootstrap";
+import "../about.css";
 
 export default function About() {
   return (
@@ -21,12 +21,12 @@ export default function About() {
       </Row>
       <br />
       <Row>
-          <p>
-            Here at DrumCare we do just what our name says, care about drums. As
-            professional drummers in the industry we know that one of the most
-            important aspects to a fine playing drum kit is whether or not it is
-            in tune.
-          </p>
+        <p>
+          Here at DrumCare we do just what our name says, care about drums. As
+          professional drummers in the industry we know that one of the most
+          important aspects to a fine playing drum kit is whether or not it is
+          in tune.
+        </p>
       </Row>
       <Row>
         <Col className="text-center">
@@ -46,7 +46,7 @@ export default function About() {
         <Col className="py-3">
           <Card>
             <Card.Body className="rounded bg-primary text-white">
-              <Image src="/images/BB_Drums.jpg" fluid rounded />
+              <Image src="/images/BB_Smile.jpg" fluid rounded />
               <Card.Title>
                 <Card.Header>
                   <h3 className="text-white pt-3">Brandi</h3>
@@ -56,9 +56,11 @@ export default function About() {
                 With a Bachelors Degree in Music Composition with a minor in
                 Drums from MacEwan University, plus 7 years in instrument
                 retail, Brandi knows the ins and outs of shell make, skin
-                performance, and instrument longevity. When not wearing the
-                DrumCare cape, Brandi enjoys long walks on the beach with a cup
-                of coffee with cream.
+                performance, and instrument longevity.<br /><br />
+                When not wearing the
+                DrumCare cape, Brandi works as a freelance composer, teaches
+                drums/guitar/piano, plays in 3 bands, and produces a
+                podcast.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -66,7 +68,13 @@ export default function About() {
         <Col className="py-3">
           <Card>
             <Card.Body className="rounded bg-primary text-white">
-              <Image src="/images/JG_Drums.jpg" fluid rounded />
+              <Image
+                className="pl-5"
+                src="/images/JG_Profesh.jpg"
+                style={{ maxHeight: "565px" }}
+                fluid
+                rounded
+              />
 
               <Card.Title>
                 <Card.Header>
@@ -76,14 +84,15 @@ export default function About() {
               <Card.Text>
                 Drum Instructor by day, professional drummer by night with a
                 Bachelors Degree in Drum Performance from MacEwan University,
-                Jon knows the importance of a good sounding kit. Apart from
-                flawlessly laying out fills in odd time signatures Jon enjoys
-                long walks on the beach with a cup of black coffee.
+                Jon knows the importance of a good sounding kit. <br /><br />
+                Apart from being the drum tuning master at DrumCare, Jon also
+                works as a drum instructor and freelance session drummer around
+                Edmonton
               </Card.Text>
             </Card.Body>
           </Card>
         </Col>
       </Row>
     </Container>
-  )
+  );
 }
